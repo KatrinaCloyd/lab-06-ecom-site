@@ -19,7 +19,7 @@ export const animals = [
     },
     {
         id: 3,
-        name: 'Bunny Formerly Known as Prince',
+        name: 'The Bunny Formerly Known as Prince',
         species: 'Jackalope',
         image: '../assets/jackalope.png',
         price: 200,

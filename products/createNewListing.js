@@ -33,15 +33,9 @@ export function newAnimalListing(animal) {
         pMagic.textContent = `${animal.name} is a Magical Creature`;
     }
 
+    const buyBtn = document.createElement('button');
+    buyBtn.textContent = 'Add to cart';
+    li.append(buyBtn);
+
     return li;
 }
-
-/*
-    id: 1,
-    name: 'Freddy Mercury',
-    species: 'Unicorn',
-    image: '../assets/unicorn.png',
-    price: 999,
-    notes: 'Needs a lot of space, unaware of horn length causing frequent gorgings and getting himself stuck.',
-    magical: true,
-*/
