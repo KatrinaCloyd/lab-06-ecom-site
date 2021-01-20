@@ -13,7 +13,7 @@ export function newAnimalListing(animal) {
     li.append(pSpecies);
 
     const img = document.createElement('img');
-    img.src = `../assets/${animal.species}.png`;
+    img.src = animal.image;
     li.append(img);
 
     const pPrice = document.createElement('p');
