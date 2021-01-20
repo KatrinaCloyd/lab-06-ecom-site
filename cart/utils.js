@@ -5,3 +5,8 @@ export function findById(number, array) {
         }
     }
 }
+
+export function calcItemTotal(quantity, priceEach) {
+    let itemTotal = quantity * priceEach;
+    return itemTotal;
+}

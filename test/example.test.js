@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import { newAnimalListing } from '../products/createNewListing.js';
-import { findById } from '../cart/utils.js';
+import { findById, calcItemTotal } from '../cart/utils.js';
 import { animals } from '../products/data.js';
 
 const test = QUnit.test;
@@ -35,6 +35,15 @@ test('findById takes a number and returns the correct animal object from animal 
     };
 
     const actual = findById(4, animals);
+
+    expect.deepEqual(actual, expected);
+});
+
+test('calcItemTotal takes in two numbers, multiplies them and returns the answer', (expect) => {
+
+    const expected = 178;
+
+    const actual = calcItemTotal(2, 89);
 
     expect.deepEqual(actual, expected);
 });
