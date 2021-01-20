@@ -85,6 +85,8 @@ h3 {
 }
 
 button{
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 0.8rem;
     background: rgb(81,215,178);
     border: none;
     width: 50%;
@@ -152,6 +154,24 @@ a:link {
     color: rgb(68,79,231);
 }
 
-a:visited{
+a:visited {
     color: rgb(81,215,178);
+}
+
+table {
+    width: 600px;
+    box-shadow: 3px 3px 8px #c6beb5;
+}
+
+th {
+    text-align: left;
+    background-color: rgb(81,215,178);
+}
+
+th, td {
+    padding: 8px;
+}
+
+#grandTotal{
+    background-color: rgba(81,215,178,.4)
 }
