@@ -1,5 +1,7 @@
 // IMPORT MODULES under test here:
 import { newAnimalListing } from '../products/createNewListing.js';
+import { findById } from '../cart/utils.js';
+import { animals } from '../products/data.js';
 
 const test = QUnit.test;
 
@@ -18,4 +20,21 @@ test('shoudld take in aniaml and return a li', (expect) => {
     const actual = newAnimalListing(uni);
 
     expect.equal(actual.outerHTML, expected);
+});
+
+test('findById takes a number and returns the correct animal object from animal array', (expect) => {
+
+    const expected = {
+        id: 4,
+        name: 'Lady Gaga',
+        species: 'Cheshire Cat',
+        image: '../assets/cheshirecat.png',
+        price: 89,
+        notes: 'May just be a feral cat.',
+        magical: false,
+    };
+
+    const actual = findById(4, animals);
+
+    expect.deepEqual(actual, expected);
 });

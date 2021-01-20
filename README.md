@@ -14,3 +14,16 @@ set up function for creating dom objects from data set
 test
 
 when all working correctly go in and refine css 
+
+
+
+--Cart Day--
+
+Set up cart page 
+set up dummy info
+TDD function to get animal by id
+TDD function to calculate line item total 
+TDD function to create new table element 
+Generate shopping cart populated with dummy data
+TDD cart total 
+Add cart total to cart page 

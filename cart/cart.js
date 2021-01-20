@@ -1,4 +1,4 @@
-expport const cart = [{
+expport const cartItems = [{
     id: 2,
     quantity: 1
 },
