@@ -48,7 +48,7 @@ export const animals = [
         id: 6,
         name: 'Elvis',
         species: 'Lake Monster',
-        image: '../assets/Lake Monster.png',
+        image: '../assets/LakeMonster.png',
         price: 399,
         notes: 'Likes his space to be alone. Very reclusive, may or may not even still be alive.',
         magical: false,
