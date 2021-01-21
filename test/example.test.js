@@ -55,7 +55,7 @@ test('renderLineItems takes in cartItem the corresponding animal and returns a t
         quantity: 3
     };
     const item = findById(lineItem.id, animals);
-    const expected = `<tr><td>Lady Gaga</td><td>Cheshire Cat</td><td>3</td><td>$267</td></tr>`;
+    const expected = `<tr><td>Lady Gaga</td><td>Cheshire Cat</td><td>No</td><td>3</td><td>$267</td></tr>`;
 
     const actual = renderLineItems(lineItem, item);
 
