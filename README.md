@@ -26,7 +26,7 @@ Add cart total to cart page
 --Local Storage Day--
 -functions to write and test  in CartUtils.js
 X    -getCart 
-    -clearCart
+X    -clearCart
     -setCart this adds an item to the cart 
 
 -eventlistner to item buttons to add items to cart and show on cart page
@@ -35,4 +35,6 @@ X    -getCart
     -clear cart
     -altert order
     -redirect to items page 
+
+Maybe also add a clear cart button on cart page 
 

@@ -36,3 +36,9 @@ export function getCart() {
         return defaultEmptyCart;
     }
 }
+
+export function clearCart() {
+    const strDefaultCart = JSON.stringify(defaultEmptyCart);
+    localStorage.setItem(CART, strDefaultCart);
+}
+
