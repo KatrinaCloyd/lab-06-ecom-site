@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import { newAnimalListing } from '../products/createNewListing.js';
-import { findById, calcItemTotal } from '../cart/utils.js';
+import { findById, calcItemTotal, calcOrderTotal } from '../cart/utils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
 import { animals } from '../products/data.js';
 
@@ -60,4 +60,47 @@ test('renderLineItems takes in cartItem the corresponding animal and returns a t
     const actual = renderLineItems(lineItem, item);
 
     expect.deepEqual(actual.outerHTML, expected);
+});
+
+test('calcOrderTotal takes in cart array and the animal array and gives the total of all items in the cart', (expect) => {
+    const expected = 2626;
+
+    const cartItems = [{
+        id: 2,
+        quantity: 1
+    },
+    {
+        id: 4,
+        quantity: 2
+    },
+    {
+        id: 1,
+        quantity: 2
+    },
+    ];
+
+    const animals = [
+        {
+            id: 1,
+            name: 'Freddy Mercury',
+            species: 'Unicorn',
+            price: 999,
+        },
+        {
+            id: 2,
+            name: 'Cindy Lauper',
+            species: 'Phoenix',
+            price: 450,
+        },
+        {
+            id: 4,
+            name: 'Lady Gaga',
+            species: 'Cheshire Cat',
+            price: 89,
+        },
+    ];
+
+    const actual = calcOrderTotal(cartItems, animals);
+
+    expect.equal(actual, expected);
 });

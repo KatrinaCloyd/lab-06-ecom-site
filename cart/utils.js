@@ -10,3 +10,13 @@ export function calcItemTotal(quantity, priceEach) {
     let itemTotal = quantity * priceEach;
     return itemTotal;
 }
+
+export function calcOrderTotal(cartItems, animals) {
+    let grandTotal = 0;
+    for (let cartItem of cartItems) {
+        const animal = findById(cartItem.id, animals);
+        const itemTotal = calcItemTotal(cartItem, animal);
+        grandTotal = grandTotal + itemTotal;
+        return grandTotal;
+    }
+}
