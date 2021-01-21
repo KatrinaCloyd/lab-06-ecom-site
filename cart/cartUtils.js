@@ -42,3 +42,26 @@ export function clearCart() {
     localStorage.setItem(CART, strDefaultCart);
 }
 
+export function setCart(cart) {
+    const strCart = JSON.stringify(cart);
+    localStorage.setItem(CART, strCart);
+}
+
+export function addToCart(id) {
+    const cart = getCart();
+    //check if item in cart already
+    const item = findById(id, cart);
+    //if so ++ quantity
+    if (item) {
+        item.quantity++;
+    }
+    //if not add item id and qty:1 
+    else {
+        const newCartItem = {
+            id: id,
+            quantity: 1
+        };
+        cart.push(newCartItem);
+    }
+    setCart(cart);
+}
