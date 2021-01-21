@@ -1,7 +1,7 @@
 import { cartItems } from './cartData.js';
 import { animals } from '../products/data.js';
 
-import { findById, calcOrderTotal } from '../cart/utils.js';
+import { findById, calcOrderTotal } from '../cart/cartUtils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
 
 const table = document.getElementById('shoppingCart');

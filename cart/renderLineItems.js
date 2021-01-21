@@ -1,4 +1,4 @@
-import { calcItemTotal } from './utils.js';
+import { calcItemTotal } from './cartUtils.js';
 
 export function renderLineItems(item, animal) {
     const tr = document.createElement('tr');

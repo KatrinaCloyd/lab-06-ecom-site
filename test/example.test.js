@@ -1,6 +1,6 @@
 // IMPORT MODULES under test here:
 import { newAnimalListing } from '../products/createNewListing.js';
-import { findById, calcItemTotal, calcOrderTotal } from '../cart/utils.js';
+import { findById, calcItemTotal, calcOrderTotal } from '../cart/cartUtils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
 import { animals } from '../products/data.js';
 

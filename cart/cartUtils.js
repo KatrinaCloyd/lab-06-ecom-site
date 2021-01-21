@@ -20,3 +20,19 @@ export function calcOrderTotal(cartItems, animals) {
     }
     return grandTotal;
 }
+
+const CART = 'CART';
+const defaultEmptyCart = [];
+
+export function getCart() {
+    const strCart = localStorage.getItem(CART);
+    if (strCart) {
+        const prseCart = JSON.parse(strCart);
+        return prseCart;
+    }
+    else {
+        const strDefaultCart = JSON.stringify(defaultEmptyCart);
+        localStorage.setItem(CART, strDefaultCart);
+        return defaultEmptyCart;
+    }
+}
