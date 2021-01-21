@@ -1,6 +1,7 @@
 // IMPORT MODULES under test here:
 import { newAnimalListing } from '../products/createNewListing.js';
 import { findById, calcItemTotal } from '../cart/utils.js';
+import { renderLineItems } from '../cart/renderLineItems.js';
 import { animals } from '../products/data.js';
 
 const test = QUnit.test;
@@ -46,4 +47,17 @@ test('calcItemTotal takes in two numbers, multiplies them and returns the answer
     const actual = calcItemTotal(2, 89);
 
     expect.deepEqual(actual, expected);
+});
+
+test('renderLineItems takes in cartItem the corresponding animal and returns a table row', (expect) => {
+    const lineItem = {
+        id: 4,
+        quantity: 3
+    };
+    const item = findById(lineItem.id, animals);
+    const expected = `<tr><td>Lady Gaga</td><td>Cheshire Cat</td><td>3</td><td>$267</td></tr>`;
+
+    const actual = renderLineItems(lineItem, item);
+
+    expect.deepEqual(actual.outerHTML, expected);
 });
