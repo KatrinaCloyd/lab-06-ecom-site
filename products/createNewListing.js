@@ -1,3 +1,5 @@
+import { addToCart } from '../cart/cartUtils.js';
+
 export function newAnimalListing(animal) {
     const li = document.createElement('li');
     li.classList.add('listItem');
@@ -35,6 +37,9 @@ export function newAnimalListing(animal) {
 
     const buyBtn = document.createElement('button');
     buyBtn.textContent = 'Add to cart';
+    buyBtn.addEventListener('click', () => {
+        addToCart(animal.id);
+    });
     li.append(buyBtn);
 
     return li;
