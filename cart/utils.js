@@ -15,8 +15,8 @@ export function calcOrderTotal(cartItems, animals) {
     let grandTotal = 0;
     for (let cartItem of cartItems) {
         const animal = findById(cartItem.id, animals);
-        const itemTotal = calcItemTotal(cartItem, animal);
+        const itemTotal = calcItemTotal(cartItem.quantity, animal.price);
         grandTotal = grandTotal + itemTotal;
-        return grandTotal;
     }
+    return grandTotal;
 }
