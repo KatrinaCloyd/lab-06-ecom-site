@@ -85,11 +85,23 @@ h3 {
 }
 
 button{
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 0.8rem;
     background: rgb(81,215,178);
     border: none;
     width: 50%;
     height: 40px;
     box-shadow: 2px 2px 5px #c6beb5;
+    border-radius: 20px;
+}
+
+button:focus {
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(68,79,231);
+}
+
+button:active {
+    outline: -2px -2px 5px rgb(68,79,231);
 }
 
 .gutter-right { 
@@ -152,6 +164,37 @@ a:link {
     color: rgb(68,79,231);
 }
 
-a:visited{
+a:visited {
     color: rgb(81,215,178);
+}
+
+table {
+    font-family: 'Montserrat', sans-serif;
+    width: 700px;
+    box-shadow: 3px 3px 8px #c6beb5;
+}
+
+th {
+    font-style: italic;
+    font-weight: 900;
+    text-align: left;
+    background-color: rgb(81,215,178);
+}
+
+th, td {
+    padding: 8px;
+}
+
+.magical, .grandTot {
+    background: linear-gradient(90deg, rgba(81,215,178,1) 0%, rgba(68,79,231,1) 46%, rgba(63,221,219,1) 100%);
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   font-style: italic;
+    }
+
+.price {
+    font-style: italic;
+    color: #494847
 }
