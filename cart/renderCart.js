@@ -1,5 +1,5 @@
 import { animals } from '../products/data.js';
-import { getCart } from '../cart/cartUtils.js';
+import { getCart, clearCart } from '../cart/cartUtils.js';
 
 import { findById, calcOrderTotal } from '../cart/cartUtils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
@@ -26,3 +26,9 @@ td5.textContent = `Order total: $${grandTotal}`;
 tr.append(td1, td2, td3, td4, td5);
 
 table.append(tr);
+
+const resetBtn = document.getElementById('reset');
+resetBtn.addEventListener('click', () => {
+    clearCart();
+    location.reload();
+});
