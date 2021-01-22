@@ -121,7 +121,7 @@ footer {
     box-shadow: var(--shadow);
 }
   
-ul{
+ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
