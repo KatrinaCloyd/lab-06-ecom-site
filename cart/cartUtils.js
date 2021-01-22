@@ -48,6 +48,7 @@ export function setCart(cart) {
 }
 
 export function addToCart(id) {
+
     const cart = getCart();
     //check if item in cart already
     const item = findById(id, cart);

@@ -7,6 +7,8 @@ import { renderLineItems } from '../cart/renderLineItems.js';
 const table = document.getElementById('shoppingCart');
 const cartItems = getCart();
 
+console.log(cartItems);
+
 for (let item of cartItems) {
     const newTableRow = renderLineItems(item, findById(item.id, animals));
     table.append(newTableRow);
@@ -34,9 +36,14 @@ resetBtn.addEventListener('click', () => {
 });
 
 const orderBtn = document.getElementById('order');
+const clearBtn = document.getElementById('reset');
+if (cartItems.length !== 0) {
+    orderBtn.style.visibility = 'visible';
+    clearBtn.style.visibility = 'visible';
+}
 orderBtn.addEventListener('click', () => {
     const cart = getCart();
     alert(`Thank you so much for your fantastical order. Your order is listed here in a terrible awful way that you will never be able to make sense of.` + JSON.stringify(cart));
     clearCart();
-    location.reload();
+    location.href = '../index.html';
 });

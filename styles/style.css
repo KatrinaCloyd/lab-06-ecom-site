@@ -191,3 +191,6 @@ th, td {
     right: 30px;
     z-index: 1;
 }
+#order, #reset{
+    visibility: hidden;
+}
