@@ -194,3 +194,16 @@ th, td {
 #order, #reset{
     visibility: hidden;
 }
+input{
+    background-color: rgba(81,215,178,0.2);
+    margin: 5px;
+    border: solid 0.5px rgb(68,79,231);
+    border-radius: 10px;
+    height: 20px;
+    text-align: center;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 2px 2px 5px rgb(68,79,231);
+}
