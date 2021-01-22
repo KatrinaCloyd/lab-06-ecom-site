@@ -11,7 +11,7 @@ set up function for creating dom objects from data set
 test
 when all working correctly go in and refine css 
 
-
+X
 --Cart Day--
 
 Set up cart page 
@@ -37,5 +37,4 @@ X-load cart on shopping cart page
     -altert order
     -redirect to items page X
 
-Maybe also add a clear cart button on cart page 
-
+X Maybe also add a clear cart button on cart page 

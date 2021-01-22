@@ -32,3 +32,10 @@ resetBtn.addEventListener('click', () => {
     clearCart();
     location.reload();
 });
+
+const orderBtn = document.getElementById('order');
+orderBtn.addEventListener('click', () => {
+    const cart = getCart();
+    alert(`Thank you so much for your fantastical order. Your order is listed here in a terrible awful way that you will never be able to make sense of.` + cart);
+    clearCart();
+});
