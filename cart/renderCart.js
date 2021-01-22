@@ -1,10 +1,11 @@
-import { cartItems } from './cartData.js';
 import { animals } from '../products/data.js';
+import { getCart } from '../cart/cartUtils.js';
 
 import { findById, calcOrderTotal } from '../cart/cartUtils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
 
 const table = document.getElementById('shoppingCart');
+const cartItems = getCart();
 
 for (let item of cartItems) {
     const newTableRow = renderLineItems(item, findById(item.id, animals));

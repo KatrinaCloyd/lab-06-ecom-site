@@ -30,8 +30,8 @@ X    -clearCart- zeros out cart to the default empty cart
 X    -setCart- push cart back to localStorage as a string 
 X    -addItemToCart- adds items to the local parsed cart 
 
--eventlistner to item buttons to add items to cart and show on cart page
--load cart on shopping cart page 
+X-eventlistner to item buttons to add items to cart and show on cart page
+X-load cart on shopping cart page 
 -place order button
     -clear cart
     -altert order
