@@ -101,7 +101,7 @@ button:focus {
 }
 
 button:active {
-    outline: -2px -2px 5px rgb(68,79,231);
+    box-shadow: none;
 }
 
 .gutter-right { 
