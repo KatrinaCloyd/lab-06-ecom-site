@@ -1,5 +1,5 @@
 import { animals } from '../products/data.js';
-import { getCart, clearCart } from '../cart/cartUtils.js';
+import { getCart, clearCart } from './cartUtils.js';
 
 import { findById, calcOrderTotal } from '../cart/cartUtils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
@@ -36,6 +36,7 @@ resetBtn.addEventListener('click', () => {
 const orderBtn = document.getElementById('order');
 orderBtn.addEventListener('click', () => {
     const cart = getCart();
-    alert(`Thank you so much for your fantastical order. Your order is listed here in a terrible awful way that you will never be able to make sense of.` + cart);
+    alert(`Thank you so much for your fantastical order. Your order is listed here in a terrible awful way that you will never be able to make sense of.` + JSON.stringify(cart));
     clearCart();
+    location.reload();
 });
