@@ -38,15 +38,21 @@ X Maybe also add a clear cart button on cart page
 
 --admin page--
 
--send item offerings array to local storage
-    -save items to a const
-    -stringify
-    -set to storage 
+X -send item offerings array to local storage
+X    -save items to a const
+X    -stringify
+X    -set to storage 
 
--get items back from storage
-    -get arry back from storage
-    -parse
-    -set to a const for comparison and all current functions 
-        -export/import wherever needed 
+X-get items back from storage
+X    -get arry back from storage
+X    -parse
+X    -set to a const for comparison and all current functions 
 
 -create HTML admin form page 
+    -tie form to create item function
+    -get items
+    -append new item 
+        -will have to auto genertae next sequential id# 
+    -send items back to storage 
+
+**WAIT How will these live there for good? If we are just adding it to local storage, it wont be there for the next new user, it will need to write it to the js data file, right? 
