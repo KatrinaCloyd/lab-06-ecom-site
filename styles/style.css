@@ -70,7 +70,7 @@ h3 {
     color: white;
 }
 
-button{
+button, #adminBtn{
     font-family: 'Rock Salt', sans-serif;
     font-size: 0.8rem;
     background: rgb(81,215,178);
@@ -81,13 +81,17 @@ button{
     border-radius: 20px;
 }
 
-button:focus {
+button:focus, #adminBtn:focus {
     outline: none;
     box-shadow: 2px 2px 5px rgb(68,79,231);
 }
 
-button:active {
+button:active, #adminBtn:active {
     box-shadow: none;
+}
+
+#adminBtn{
+    align-self: center;
 }
 
 .gutter-right { 
@@ -171,7 +175,7 @@ th, td {
     padding: 8px;
 }
 
-.magical, .grandTot {
+.magical, .grandTot, legend {
     background: linear-gradient(90deg, rgba(81,215,178,1) 0%, rgba(68,79,231,1) 46%, rgba(63,221,219,1) 100%);
     color: #000;
     background-clip: text;
@@ -206,4 +210,10 @@ input{
 input:focus {
     outline: none;
     box-shadow: 2px 2px 5px rgb(68,79,231);
+}
+form{
+    width: 500px;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    border: solid 0.5px #c6beb5;
 }
