@@ -50,8 +50,6 @@ export function newAnimalListing(animal) {
             let addQty = qtyInput.valueAsNumber;
             addToCart(animal.id, addQty);
         }
-        //if input qty = null let add qty = 1 else 
-
     });
     li.append(buyBtn);
 
