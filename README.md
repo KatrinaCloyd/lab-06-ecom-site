@@ -11,9 +11,7 @@ set up function for creating dom objects from data set
 test
 when all working correctly go in and refine css 
 
-X
 --Cart Day--
-
 Set up cart page 
 set up dummy info
 TDD function to get animal by id
@@ -24,17 +22,31 @@ TDD cart total
 Add cart total to cart page 
 
 --Local Storage Day--
--functions to write and test  in CartUtils.js
-X    -getCart- gets the current cart from local storage 
-X    -clearCart- zeros out cart to the default empty cart 
-X    -setCart- push cart back to localStorage as a string 
-X    -addItemToCart- adds items to the local parsed cart 
+functions to write and test  in CartUtils.js
+X    getCart- gets the current cart from local storage 
+X    clearCart- zeros out cart to the default empty cart 
+X    setCart- push cart back to localStorage as a string 
+X    addItemToCart- adds items to the local parsed cart 
 
-X-eventlistner to item buttons to add items to cart and show on cart page
-X-load cart on shopping cart page 
--place order button
-    -clear cart
-    -altert order
-    -redirect to items page X
-
+Xeventlistner to item buttons to add items to cart and show on cart page
+Xload cart on shopping cart page 
+place order button
+    clear cart
+    altert order
+    redirect to items page X
 X Maybe also add a clear cart button on cart page 
+
+--admin page--
+
+-send item offerings array to local storage
+    -save items to a const
+    -stringify
+    -set to storage 
+
+-get items back from storage
+    -get arry back from storage
+    -parse
+    -set to a const for comparison and all current functions 
+        -export/import wherever needed 
+
+-create HTML admin form page 
