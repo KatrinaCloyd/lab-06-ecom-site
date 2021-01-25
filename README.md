@@ -55,4 +55,4 @@ X    -set to a const for comparison and all current functions
         -will have to auto genertae next sequential id# 
     -send items back to storage 
 
-**WAIT How will these live there for good? If we are just adding it to local storage, it wont be there for the next new user, it will need to write it to the js data file, right? 
+**WAIT How will these live there for good? If we are just adding it to local storage, it wont be there for the next new user, it will need to write it to the js data file, right? But if we are pretending that the Local Storage is our database, then that is it not really saving it is okay...? 
