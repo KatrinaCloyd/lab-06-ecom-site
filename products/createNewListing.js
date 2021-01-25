@@ -16,6 +16,7 @@ export function newAnimalListing(animal) {
 
     const img = document.createElement('img');
     img.src = animal.image;
+    img.onerror = () => img.src = '../assets/noImage.png';
     li.append(img);
 
     const pPrice = document.createElement('p');
@@ -50,8 +51,6 @@ export function newAnimalListing(animal) {
             let addQty = qtyInput.valueAsNumber;
             addToCart(animal.id, addQty);
         }
-        //if input qty = null let add qty = 1 else 
-
     });
     li.append(buyBtn);
 

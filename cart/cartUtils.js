@@ -48,15 +48,11 @@ export function setCart(cart) {
 }
 
 export function addToCart(id, qtyInput) {
-
     const cart = getCart();
-    //check if item in cart already
     const item = findById(id, cart);
-    //if so ++ quantity
     if (item) {
         item.quantity += qtyInput;
     }
-    //if not add item id and qty:1 
     else {
         const newCartItem = {
             id: id,

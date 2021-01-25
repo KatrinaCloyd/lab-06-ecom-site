@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/style.css">
+    <title>Fantasy Pet Shop</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <h1>
+                Fantasy Pet Shop
+            </h1>
+            <h4>
+                <a href='../index.html'>Home</a>
+            </h4>
+            <h4>
+                <a href='../products/index.html'>Animals</a>
+            </h4>
+            <h4>
+                <a href='../cart/index.html'>Cart</a>
+            </h4>
+            <h4>
+                Admin
+            </h4>
+        </div>
+    </header>
+    <main>
+        <section class="main-section">
+            <h2>
+                Welcome Fantasy Pet Shop Admin!
+            </h2>
+            <section>
+                <p>Use the form below to add new pet offerings to our page.
+                </p></br>
+                <form id='add-animal-listing'>
+                    <legend>Enter New Pet Information Here:</legend></br>
+                    <label>
+                        Listing ID Number:
+                        <input type="number" name="id">
+                    </label></br>
+                    <label>
+                        Animal Name:
+                        <input type="text" name="name">
+                    </label></br>
+                    <label>
+                        Species:
+                        <input type="text" name="species">
+                    </label></br>
+                    <label>
+                        Upload an Image:
+                        <input type="file" name="image">
+                    </label></br>
+                    <label>
+                        Price:
+                        <input type="text" name="price">
+                    </label></br>
+                    <label>
+                        Special notes or consideratioins for this animal:</br>
+                        <input type="text" name="notes">
+                    </label></br>
+                    Is this animal magical?
+                    <label><input type="radio" name="magical" value="true">Yes</label>
+                    <label><input type="radio" name="magical" value="false">No</label>
+                    </br>
+                    <p><input id="adminBtn" type="submit" value="Add New Animal"></p>
+                </form></br>
+                <p><a href='../products/index.html'> Return to our animals page. </a>
+                </p>
+            </section>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script type="module" src="addItem.js"></script>
+</body>
+
+</html>

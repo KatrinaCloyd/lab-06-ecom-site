@@ -1,3 +1,18 @@
+const ITEMS = 'items';
+
+export function setItemsForSale(items) {
+    if (!getItemsForSale()) {
+        const stringyItemsForSale = JSON.stringify(items);
+        localStorage.setItem(ITEMS, stringyItemsForSale);
+    }
+}
+
+export function getItemsForSale() {
+    const strItems = localStorage.getItem(ITEMS);
+    const prseItemsForSale = JSON.parse(strItems);
+    return prseItemsForSale;
+}
+
 export const animals = [
     {
         id: 1,
