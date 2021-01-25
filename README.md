@@ -52,7 +52,6 @@ X-create HTML admin form page
     -tie form to create item function no just need to add the correct key/values to the object before adding it to the array
      -event listner
      -get all relevant info
-     -will have to auto generate next sequential id# 
     
     -get current items from storage
     -append new item (push) 

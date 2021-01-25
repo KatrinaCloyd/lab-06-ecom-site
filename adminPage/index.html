@@ -41,8 +41,12 @@
             <section>
                 <p>Use the form below to add new pet offerings to our page.
                 </p></br>
-                <form>
+                <form id='add-animal-listing'>
                     <legend>Enter New Pet Information Here:</legend></br>
+                    <label>
+                        Listing ID Number:
+                        <input type="number" name="id">
+                    </label></br>
                     <label>
                         Animal Name:
                         <input type="text" name="name">
@@ -63,11 +67,10 @@
                         Special notes or consideratioins for this animal:</br>
                         <input type="text" name="notes">
                     </label></br>
-                    <label>
-                        Is this animal magical?
-                        <input type="radio" name="magical" value="true">Yes
-                        <input type="radio" name="magical" value="false">No
-                    </label></br>
+                    Is this animal magical?
+                    <label><input type="radio" name="magical" value="true">Yes</label>
+                    <label><input type="radio" name="magical" value="false">No</label>
+                    </br>
                     <p><input id="adminBtn" type="submit" value="Add New Animal"></p>
                 </form></br>
                 <p><a href='../products/index.html'> Return to our animals page. </a>
@@ -77,6 +80,7 @@
     </main>
     <footer>
     </footer>
+    <script type="module" src="addItem.js"></script>
 </body>
 
 </html>
