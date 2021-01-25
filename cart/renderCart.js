@@ -1,4 +1,3 @@
-import { animals } from '../products/data.js';
 import { getCart, clearCart } from './cartUtils.js';
 
 import { findById, calcOrderTotal } from '../cart/cartUtils.js';
