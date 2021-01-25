@@ -13,5 +13,12 @@ adminForm.addEventListener('submit', (event) => {
         notes: formInfo.get('notes'),
         magical: formInfo.get('magical')
     };
-    console.log(newAnimalInfo);
+
+    const currentItems = localStorage.getItem('items');
+    const parsedItems = JSON.parse(currentItems);
+
+    parsedItems.push(newAnimalInfo);
+
+    const newStringyItems = JSON.stringify(parsedItems);
+    localStorage.setItem('items', newStringyItems);
 });

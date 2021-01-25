@@ -50,12 +50,13 @@ X    -set to a const for comparison and all current functions
 
 X-create HTML admin form page 
     -tie form to create item function no just need to add the correct key/values to the object before adding it to the array
-     -event listner
-     -get all relevant info
+    X -event listner
+    X -get all relevant info
     
-    -get current items from storage
-    -append new item (push) 
-    -send itemlist back to storage 
+    X-get current items from storage
+    X-append new item (push) 
+    X-send itemlist back to storage 
 
-**WAIT How will these live there for good? If we are just adding it to local storage, it wont be there for the next new user, it will need to write it to the js data file, right? But if we are pretending that the Local Storage is our database, then that is it not really saving it is okay...? 
-X
+This is adding to local storange, but as soon as I go back to the product page, it is rewriting the local storage to the standard base list. 
+find where set inital cart is called and add an if... 
+if cart already exists, do nothing. Only set cart with default items if there are no items in the cart... 
