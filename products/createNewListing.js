@@ -16,6 +16,7 @@ export function newAnimalListing(animal) {
 
     const img = document.createElement('img');
     img.src = animal.image;
+    img.onerror = () => img.src = '../assets/noImage.png';
     li.append(img);
 
     const pPrice = document.createElement('p');
