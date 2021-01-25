@@ -1,3 +1,5 @@
+import { addToCart } from '../cart/cartUtils.js';
+
 export function newAnimalListing(animal) {
     const li = document.createElement('li');
     li.classList.add('listItem');
@@ -33,8 +35,24 @@ export function newAnimalListing(animal) {
         pMagic.textContent = `${animal.name} is a Magical Creature`;
     }
 
+    const qtyInput = document.createElement('input');
+    qtyInput.type = 'number';
+    qtyInput.classList.add('addQty');
+    qtyInput.value = 1;
+    li.append(qtyInput);
+
     const buyBtn = document.createElement('button');
     buyBtn.textContent = 'Add to cart';
+    buyBtn.addEventListener('click', () => {
+        if (qtyInput.valueAsNumber === 'null') {
+            addToCart(animal.id, 1);
+        } else {
+            let addQty = qtyInput.valueAsNumber;
+            addToCart(animal.id, addQty);
+        }
+        //if input qty = null let add qty = 1 else 
+
+    });
     li.append(buyBtn);
 
     return li;
