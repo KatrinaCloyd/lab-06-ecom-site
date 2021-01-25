@@ -4,6 +4,7 @@ adminForm.addEventListener('submit', (event) => {
     event.preventDefault();
 
     const formInfo = new FormData(adminForm);
+
     const newAnimalInfo = {
         id: formInfo.get('id'),
         name: formInfo.get('name'),
@@ -11,7 +12,7 @@ adminForm.addEventListener('submit', (event) => {
         image: formInfo.get('image'),
         price: formInfo.get('price'),
         notes: formInfo.get('notes'),
-        magical: formInfo.get('magical')
+        magical: formInfo.get('magical'.value)
     };
 
     const currentItems = localStorage.getItem('items');

@@ -1,8 +1,10 @@
 const ITEMS = 'items';
 
 export function setItemsForSale(items) {
-    const stringyItemsForSale = JSON.stringify(items);
-    localStorage.setItem(ITEMS, stringyItemsForSale);
+    if (!getItemsForSale()) {
+        const stringyItemsForSale = JSON.stringify(items);
+        localStorage.setItem(ITEMS, stringyItemsForSale);
+    }
 }
 
 export function getItemsForSale() {

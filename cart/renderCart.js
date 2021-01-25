@@ -3,18 +3,18 @@ import { getCart, clearCart } from './cartUtils.js';
 
 import { findById, calcOrderTotal } from '../cart/cartUtils.js';
 import { renderLineItems } from '../cart/renderLineItems.js';
+import { getItemsForSale } from '../products/data.js';
 
 const table = document.getElementById('shoppingCart');
 const cartItems = getCart();
-
-console.log(cartItems);
+const itemList = getItemsForSale();
 
 for (let item of cartItems) {
-    const newTableRow = renderLineItems(item, findById(item.id, animals));
+    const newTableRow = renderLineItems(item, findById(item.id, itemList));
     table.append(newTableRow);
 }
 
-const grandTotal = calcOrderTotal(cartItems, animals);
+const grandTotal = calcOrderTotal(cartItems, itemList);
 
 const tr = document.createElement('tr');
 const td1 = document.createElement('td');
