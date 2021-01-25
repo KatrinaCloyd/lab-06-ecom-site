@@ -48,15 +48,24 @@ footer {
 
 h1 {
     font-family: 'Rock Salt', sans-serif;
-    font-size: 1.8rem;
+    font-size: 2rem;
+    text-align: center;
     font-weight: bold;
     z-index: 5;
 }
 
+
 h2 {
     font-family: 'Rock Salt', sans-serif;
-    font-size: 1.8rem;
+    text-align: center;
+    font-size: 1.7rem;
     font-weight: bold;
+    margin-top: 12px;
+    margin-bottom: 0;
+}
+h4>a, h4>a:visited, h4>a:link { 
+    text-decoration: none;
+    color: whitesmoke;
 }
 
 h3 {
@@ -68,6 +77,13 @@ h3 {
     font-family: 'Rock Salt', sans-serif;
     font-size: 1.2rem;
     color: white;
+}
+h4 {
+    display: inline-block;
+    font-family: 'Rock Salt', sans-serif;
+    font-size: 1rem;
+    margin: 0px 40px 10px 40px;
+    color: whitesmoke;
 }
 
 button, #adminBtn{

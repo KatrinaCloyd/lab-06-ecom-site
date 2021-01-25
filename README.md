@@ -48,11 +48,15 @@ X    -get arry back from storage
 X    -parse
 X    -set to a const for comparison and all current functions 
 
--create HTML admin form page 
-    -tie form to create item function
-    -get items
-    -append new item 
-        -will have to auto genertae next sequential id# 
-    -send items back to storage 
+X-create HTML admin form page 
+    -tie form to create item function no just need to add the correct key/values to the object before adding it to the array
+     -event listner
+     -get all relevant info
+     -will have to auto generate next sequential id# 
+    
+    -get current items from storage
+    -append new item (push) 
+    -send itemlist back to storage 
 
 **WAIT How will these live there for good? If we are just adding it to local storage, it wont be there for the next new user, it will need to write it to the js data file, right? But if we are pretending that the Local Storage is our database, then that is it not really saving it is okay...? 
+X
